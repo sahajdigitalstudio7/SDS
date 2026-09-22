@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sahaj Digital Studio | Digital Growth, Marketing &amp; Creative Strategy</title>
+<meta name="description" content="Sahaj Digital Studio helps businesses, startups, creators and brands build their digital presence through websites, digital marketing, advertising, creative design, content and growth strategy.">
+<link rel="canonical" href="https://www.sahajdigitalstudio.com/">
+<meta name="theme-color" content="#061729">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sahaj Digital Studio">
+<meta property="og:url" content="https://www.sahajdigitalstudio.com/">
+<meta property="og:title" content="Sahaj Digital Studio | Digital Growth, Marketing &amp; Creative Strategy">
+<meta property="og:description" content="Build your digital presence. Present your value. Promote your business. Grow strategically.">
+<meta property="og:image" content="https://www.sahajdigitalstudio.com/assets/logo.png">
+<meta property="og:image:alt" content="Sahaj Digital Studio logo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sahaj Digital Studio | Digital Growth, Marketing &amp; Creative Strategy">
+<meta name="twitter:description" content="Build your digital presence. Present your value. Promote your business. Grow strategically.">
+<meta name="twitter:image" content="https://www.sahajdigitalstudio.com/assets/logo.png">
+
+<link rel="icon" href="assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Sahaj Digital Studio",
+  "description": "Digital growth, marketing and creative strategy company helping businesses, startups, creators and brands build, present, promote and grow their digital presence.",
+  "url": "https://www.sahajdigitalstudio.com/",
+  "logo": "https://www.sahajdigitalstudio.com/assets/logo.png",
+  "image": "https://www.sahajdigitalstudio.com/assets/logo.png",
+  "telephone": "+917972225403",
+  "email": "sahajdigitalstudio7@gmail.com",
+  "slogan": "Build. Present. Promote. Grow. Improve.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+917972225403",
+    "email": "sahajdigitalstudio7@gmail.com",
+    "contactType": "sales"
+  }
+}
+</script>
+
+<style>
+/* ============================================================
+   SAHAJ DIGITAL STUDIO — design tokens
+   Palette sampled from the official logo.
+   ============================================================ */
+:root{
+  --navy-900:#061729;
+  --navy-800:#0A1E36;
+  --navy-700:#0C2545;
+  --navy-600:#16375D;
+  --navy-500:#1F4876;
+  --orange:#FE5701;        /* shapes, squares, rules  */
+  --orange-dark:#D24400;   /* button fills (white text passes AA) */
+  --orange-ink:#BF3D00;    /* orange text on light backgrounds */
+  --green:#0F7E62;
+  --paper:#FFFFFF;
+  --mist:#F3F5F8;
+  --mist-2:#E9EDF3;
+  --rule:#DDE3EB;
+  --slate:#53627A;
+  --slate-light:#5F6E86;
+
+  --display:'Manrope',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+
+  --wrap:1180px;
+  --gut:clamp(20px,5vw,48px);
+  --sec:clamp(64px,8vw,116px);
+  --r:8px;
+
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px));-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--slate);
+  font-family:var(--body);font-size:16.5px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img,svg,video{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:var(--display);color:var(--navy-700);margin:0;line-height:1.12;letter-spacing:-.022em;font-weight:800}
+h1{font-size:clamp(2.3rem,5.4vw,4rem)}
+h2{font-size:clamp(1.85rem,3.7vw,2.9rem)}
+h3{font-size:clamp(1.12rem,1.7vw,1.32rem);font-weight:700;letter-spacing:-.014em;line-height:1.28}
+p{margin:0 0 1.05em}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-inline:var(--gut)}
+.sec{padding-block:var(--sec)}
+.lede{font-size:clamp(1.02rem,1.5vw,1.16rem);color:var(--slate);max-width:64ch}
+.dark{background:var(--navy-900);color:#B8C6DA}
+.dark h2,.dark h3,.dark h4{color:#fff}
+.dark .lede{color:#9FB2CB}
+.mist{background:var(--mist)}
+
+/* focus */
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,video:focus-visible{
+  outline:3px solid var(--orange);outline-offset:3px;border-radius:3px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--orange);color:#fff;padding:12px 18px;z-index:200;font-weight:600}
+.skip:focus{left:8px;top:8px}
+
+/* ---- pixel-square motif (from the logo's trailing squares) ---- */
+.sq{width:8px;height:8px;background:var(--orange);flex:none}
+.eyebrow{
+  font-family:var(--body);font-size:.82rem;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--orange-ink);display:flex;align-items:center;gap:9px;margin-bottom:16px}
+.eyebrow::before{content:"";width:7px;height:7px;background:var(--orange);flex:none}
+.dark .eyebrow{color:#FF8342}
+.dark .eyebrow::before{background:#FF8342}
+
+/* ---- buttons ---- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  font-family:var(--display);font-weight:700;font-size:.97rem;letter-spacing:-.008em;
+  padding:15px 26px;border-radius:var(--r);border:1.5px solid transparent;
+  text-decoration:none;cursor:pointer;transition:background .18s,color .18s,border-color .18s,transform .18s;
+  line-height:1.2;text-align:center}
+.btn-primary{background:var(--orange-dark);color:#fff;border-color:var(--orange-dark)}
+.btn-primary:hover{background:#AF3900;border-color:#AF3900}
+.btn-ghost{background:transparent;color:var(--navy-700);border-color:var(--rule)}
+.btn-ghost:hover{border-color:var(--navy-700);background:var(--navy-700);color:#fff}
+.dark .btn-ghost{color:#fff;border-color:rgba(255,255,255,.28)}
+.dark .btn-ghost:hover{background:#fff;color:var(--navy-900);border-color:#fff}
+.btn-wa{background:var(--green);color:#fff;border-color:var(--green)}
+.btn-wa:hover{background:#0B6349;border-color:#0B6349}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+
+/* =================== HEADER =================== */
+.hdr{
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:100;
+  background:rgba(6,23,41,.92);backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(255,255,255,.09);transition:background .25s}
+.hdr-in{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut);
+  height:76px;display:flex;align-items:center;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.brand img{width:44px;height:44px;border-radius:50%}
+.brand b{font-family:var(--display);font-weight:800;color:#fff;font-size:1.04rem;letter-spacing:-.02em;display:block;line-height:1.15}
+.brand-txt{display:block}
+.brand-sub{display:block;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:#93A6BF;font-weight:600}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{color:#C4D2E4;text-decoration:none;font-size:.95rem;font-weight:500;padding:6px 0;position:relative}
+.nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--orange);transition:width .2s}
+.nav a:hover{color:#fff}
+.nav a:hover::after{width:100%}
+.hdr .btn{padding:12px 20px;font-size:.92rem}
+.burger{display:none;background:none;border:1px solid rgba(255,255,255,.25);border-radius:6px;
+  width:44px;height:44px;cursor:pointer;padding:0;align-items:center;justify-content:center}
+.burger span{display:block;width:20px;height:2px;background:#fff;position:relative;transition:background .2s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:#fff;transition:transform .25s}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{display:none;background:var(--navy-800);border-bottom:1px solid rgba(255,255,255,.1)}
+.mnav.open{display:block}
+.mnav ul{list-style:none;margin:0;padding:8px var(--gut) 22px}
+.mnav a{display:block;padding:14px 0;color:#D3DEEC;text-decoration:none;font-weight:600;
+  font-family:var(--display);border-bottom:1px solid rgba(255,255,255,.08)}
+.mnav .btn{margin-top:18px;width:100%}
+
+/* =================== HERO =================== */
+.hero{background:var(--navy-900);color:#B8C6DA;position:relative;overflow:hidden;
+  padding-block:clamp(56px,7vw,104px) clamp(56px,7vw,96px)}
+.hero::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(1100px 520px at 88% 18%,rgba(254,87,1,.14),transparent 62%);
+  pointer-events:none}
+.hero-in{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(36px,5vw,72px);align-items:center}
+.hero h1{color:#fff;margin-bottom:22px;max-width:15ch}
+.hero .lede{font-size:clamp(1.06rem,1.6vw,1.22rem);color:#A9BCD4;max-width:50ch;margin-bottom:14px}
+.hero .lede-2{font-size:1rem;color:#7F93AE;max-width:52ch;margin-bottom:32px}
+.hero .btns{margin-bottom:34px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px 26px;font-size:.88rem;color:#7F93AE}
+.hero-meta span{display:flex;align-items:center;gap:8px}
+.hero-meta i{width:6px;height:6px;background:var(--orange);flex:none;font-style:normal}
+
+/* ecosystem diagram */
+.eco{width:100%;height:auto}
+.eco .rail{stroke:#1D3E63;stroke-width:1.5}
+.eco .node rect{fill:#0E2742;stroke:#24507F;stroke-width:1.2;rx:6}
+.eco .node text{font-family:'Inter',sans-serif;font-size:12.5px;font-weight:600;fill:#CBD9EA}
+.eco .pip{fill:var(--orange)}
+.eco .flow{stroke:var(--orange);stroke-width:2.2;stroke-linecap:square;fill:none;
+  stroke-dasharray:26 560;stroke-dashoffset:26;animation:flow 7s linear infinite}
+.eco .glow rect{fill:#13314F;stroke:var(--orange)}
+.eco .glow text{fill:#fff}
+@keyframes flow{to{stroke-dashoffset:-560}}
+
+/* =================== STRIP =================== */
+.strip{background:var(--orange);color:var(--navy-700)}
+.strip .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:12px 22px;padding-block:17px;text-align:center}
+.strip b{font-family:var(--display);font-weight:800;font-size:clamp(.82rem,1.4vw,.98rem);
+  letter-spacing:.15em;text-transform:uppercase}
+.strip i{width:6px;height:6px;background:var(--navy-700);display:block;font-style:normal;opacity:.6}
+
+/* =================== VIDEO =================== */
+.vid-head{max-width:70ch;margin-bottom:clamp(32px,4vw,48px)}
+.player{position:relative;width:min(100%,860px);margin:0 auto;aspect-ratio:16/9;
+  background:var(--navy-800);border-radius:12px;overflow:hidden;
+  box-shadow:0 22px 60px -22px rgba(6,23,41,.55);border:1px solid rgba(255,255,255,.1)}
+.player video{width:100%;height:100%;object-fit:cover;background:#000}
+.player .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.play{position:absolute;inset:0;width:100%;height:100%;border:0;cursor:pointer;padding:0;
+  background:linear-gradient(180deg,rgba(6,23,41,.18),rgba(6,23,41,.55));
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;
+  transition:background .25s}
+.play:hover{background:linear-gradient(180deg,rgba(6,23,41,.3),rgba(6,23,41,.65))}
+.play-ring{width:78px;height:78px;border-radius:50%;background:var(--orange);
+  display:flex;align-items:center;justify-content:center;transition:transform .22s;
+  box-shadow:0 10px 30px -6px rgba(254,87,1,.55)}
+.play:hover .play-ring{transform:scale(1.07)}
+.play-ring svg{margin-left:5px}
+.play-label{font-family:var(--display);font-weight:700;color:#fff;font-size:1rem;
+  background:rgba(6,23,41,.55);padding:9px 18px;border-radius:99px;backdrop-filter:blur(4px)}
+.player.playing .play,.player.playing .poster{display:none}
+.vid-note{text-align:center;font-size:.9rem;color:var(--slate-light);margin:22px 0 0}
+
+/* =================== GRIDS / CARDS =================== */
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--paper);border:1px solid var(--rule);border-radius:var(--r);
+  padding:clamp(22px,2.4vw,30px);transition:border-color .2s,box-shadow .2s}
+.card:hover{border-color:var(--navy-600);box-shadow:0 12px 30px -18px rgba(6,23,41,.4)}
+.card h3{margin-bottom:9px}
+.card p{margin:0;font-size:.95rem;line-height:1.6}
+.card .ico{width:38px;height:38px;margin-bottom:16px;color:var(--orange)}
+.mist .card{background:var(--paper)}
+
+.sec-head{margin-bottom:clamp(30px,4vw,48px)}
+.sec-head h2{margin-bottom:14px}
+.head-row{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap}
+
+/* =================== PROBLEM =================== */
+.prob{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,5vw,70px);align-items:start}
+.prob ul{list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--rule);
+  border:1px solid var(--rule);border-radius:var(--r);overflow:hidden}
+.prob li{background:var(--paper);padding:15px 18px;display:flex;gap:13px;align-items:flex-start;
+  font-size:.95rem;color:var(--navy-700);font-weight:500}
+.prob li::before{content:"";width:7px;height:7px;background:var(--mist-2);margin-top:8px;flex:none}
+.prob-answer{background:var(--navy-700);color:#C6D5E7;border-radius:var(--r);
+  padding:clamp(24px,3vw,34px);margin-top:28px;border-left:4px solid var(--orange)}
+.prob-answer p{margin:0;font-family:var(--display);font-weight:600;font-size:1.08rem;
+  line-height:1.5;color:#fff;letter-spacing:-.012em}
+
+/* =================== APPROACH (true sequence → numbering earned) =================== */
+.steps{display:grid;grid-template-columns:repeat(7,1fr);gap:0;position:relative;
+  border-top:1px solid rgba(255,255,255,.14)}
+.step{padding:30px 22px 0 0;position:relative}
+.step::before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;background:var(--navy-500)}
+.step:first-child::before,.step.on::before{background:var(--orange)}
+.step .n{font-family:var(--display);font-weight:800;font-size:.8rem;color:var(--orange);
+  letter-spacing:.06em;margin-bottom:8px}
+.step h3{font-size:1.06rem;margin-bottom:7px;color:#fff}
+.step p{font-size:.88rem;color:#8EA4C0;margin:0;line-height:1.55}
+
+/* =================== SERVICES =================== */
+.svc{border:1px solid var(--rule);border-radius:var(--r);background:var(--paper);overflow:hidden}
+.svc-top{padding:clamp(24px,2.6vw,32px);border-bottom:1px solid var(--rule)}
+.svc-top h3{font-size:clamp(1.24rem,2vw,1.5rem);margin-bottom:11px}
+.svc-top p{margin:0;font-size:.96rem}
+.svc-list{list-style:none;margin:0;padding:clamp(20px,2.4vw,28px);
+  display:grid;grid-template-columns:repeat(2,1fr);gap:10px 22px}
+.svc-list li{font-size:.92rem;color:var(--navy-700);display:flex;gap:10px;align-items:flex-start;line-height:1.45}
+.svc-list li::before{content:"";width:6px;height:6px;background:var(--orange);margin-top:7px;flex:none}
+.svc-foot{padding:0 clamp(20px,2.4vw,28px) clamp(22px,2.4vw,28px)}
+.svc-foot .btn{padding:13px 22px;font-size:.92rem}
+
+/* =================== INTEGRATED =================== */
+.chain{display:grid;grid-template-columns:repeat(8,1fr);gap:10px;margin-top:8px}
+.chain li{list-style:none;position:relative;padding-top:22px;
+  font-family:var(--display);font-weight:700;font-size:.88rem;color:#fff;letter-spacing:-.01em}
+.chain li::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:rgba(255,255,255,.16)}
+.chain li::after{content:"";position:absolute;top:-3px;left:0;width:9px;height:9px;background:var(--orange)}
+.chain li:nth-child(n+5)::before{background:rgba(254,87,1,.5)}
+.stack{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:26px 0 0}
+.stack b{font-family:var(--display);font-weight:700;background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.18);color:#fff;padding:9px 15px;border-radius:6px;font-size:.9rem}
+.stack i{color:var(--orange);font-style:normal;font-weight:800;font-size:1.15rem}
+
+/* =================== FRAMEWORK =================== */
+.fw{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-left:1px solid var(--rule)}
+.fw div{padding:clamp(24px,2.6vw,34px) clamp(18px,2vw,26px);border-right:1px solid var(--rule);
+  border-top:4px solid var(--navy-700);position:relative}
+.fw div:nth-child(1){border-top-color:var(--navy-700)}
+.fw div:nth-child(2){border-top-color:var(--navy-600)}
+.fw div:nth-child(3){border-top-color:var(--navy-500)}
+.fw div:nth-child(4){border-top-color:#C1521F}
+.fw div:nth-child(5){border-top-color:var(--orange)}
+.fw h3{font-size:clamp(1.15rem,2vw,1.5rem);font-weight:800;margin-bottom:9px;letter-spacing:-.02em}
+.fw p{margin:0;font-size:.9rem;line-height:1.55}
+
+/* =================== PORTFOLIO placeholder =================== */
+.port{border:1px dashed var(--rule);border-radius:var(--r);background:var(--paper);
+  padding:clamp(40px,6vw,72px) var(--gut);text-align:center}
+.port h3{font-size:clamp(1.3rem,2.4vw,1.75rem);margin-bottom:12px}
+.port p{max-width:52ch;margin:0 auto 26px;font-size:.98rem}
+.port-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:640px;margin:0 auto 30px}
+.port-row div{aspect-ratio:4/3;background:var(--mist);border:1px solid var(--rule);border-radius:6px;
+  display:flex;align-items:center;justify-content:center}
+.port-row span{width:10px;height:10px;background:var(--mist-2)}
+
+/* =================== CTA =================== */
+.cta-band{background:var(--navy-700);color:#C6D5E7;text-align:center;position:relative;overflow:hidden}
+.cta-band::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(760px 330px at 50% 0%,rgba(254,87,1,.2),transparent 65%)}
+.cta-band .wrap{position:relative}
+.cta-band h2{color:#fff;margin-bottom:18px}
+.cta-band .lede{margin:0 auto 32px;color:#A9BCD4}
+.cta-band .btns{justify-content:center}
+
+/* =================== CONTACT =================== */
+.contact{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(34px,5vw,64px);align-items:start}
+.ways{display:grid;gap:12px;margin:26px 0 0}
+.way{display:flex;gap:15px;align-items:center;padding:17px 19px;border:1px solid var(--rule);
+  border-radius:var(--r);background:var(--paper);text-decoration:none;transition:border-color .2s,transform .2s}
+.way:hover{border-color:var(--orange)}
+.way .ico{width:22px;height:22px;color:var(--orange);flex:none}
+.way span{min-width:0}
+.way b{display:block;overflow-wrap:anywhere;font-family:var(--display);font-weight:700;color:var(--navy-700);font-size:1rem;line-height:1.3}
+.way small{display:block;font-size:.79rem;color:var(--slate-light);letter-spacing:.05em;text-transform:uppercase;font-weight:600}
+
+form{background:var(--paper);border:1px solid var(--rule);border-radius:var(--r);padding:clamp(24px,3vw,36px)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+label{font-size:.85rem;font-weight:600;color:var(--navy-700);font-family:var(--body)}
+label .opt{color:var(--slate-light);font-weight:400}
+input,select,textarea{font-family:var(--body);font-size:.97rem;color:var(--navy-700);
+  padding:13px 14px;border:1px solid var(--rule);border-radius:6px;background:var(--paper);width:100%;
+  transition:border-color .18s}
+input:hover,select:hover,textarea:hover{border-color:var(--slate-light)}
+input:focus,select:focus,textarea:focus{border-color:var(--orange);outline-offset:1px}
+textarea{resize:vertical;min-height:112px}
+form .btn{margin-top:20px;width:100%}
+.form-note{font-size:.83rem;color:var(--slate-light);margin:14px 0 0;text-align:center}
+.form-msg{margin:16px 0 0;padding:14px 16px;border-radius:6px;font-size:.93rem;font-weight:500;display:none}
+.form-msg.show{display:block}
+.form-msg.ok{background:#E7F4F0;color:#0B5F4A;border:1px solid #B6DED2}
+.form-msg.err{background:#FDECE4;color:#9A3300;border:1px solid #F6C6AE}
+
+/* =================== FOOTER =================== */
+.ftr{background:var(--navy-900);color:#8EA4C0;padding-block:clamp(48px,6vw,72px) 0}
+.ftr-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:clamp(30px,4vw,56px)}
+.ftr img.mark{width:56px;height:56px;border-radius:50%;margin-bottom:18px}
+.ftr h4{font-size:.82rem;letter-spacing:.11em;text-transform:uppercase;color:#fff;margin-bottom:16px;font-weight:700}
+.ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ftr a{color:#8EA4C0;text-decoration:none;font-size:.94rem}
+.ftr a:hover{color:var(--orange)}
+.ftr p{font-size:.94rem;max-width:40ch}
+.ftr-tag{font-family:var(--display);font-weight:800;color:#fff;font-size:.86rem;letter-spacing:.1em;
+  display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin-top:18px}
+.ftr-tag i{width:5px;height:5px;background:var(--orange);font-style:normal;flex:none}
+.ftr-btm{margin-top:clamp(38px,5vw,58px);border-top:1px solid rgba(255,255,255,.1);
+  padding-block:22px;display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;font-size:.87rem}
+
+/* =================== WHATSAPP FLOAT =================== */
+.wa-float{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:90;
+  display:flex;align-items:center;gap:11px;background:var(--green);color:#fff;
+  text-decoration:none;padding:13px 19px 13px 15px;border-radius:99px;font-family:var(--display);
+  font-weight:700;font-size:.93rem;box-shadow:0 12px 30px -8px rgba(15,126,98,.6);
+  transition:background .2s,transform .2s}
+.wa-float:hover{background:#0B6349;transform:translateY(-2px)}
+.wa-float svg{width:23px;height:23px;flex:none}
+.wa-float .txt{display:inline}
+
+/* =================== REVEAL =================== */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+
+/* =================== RESPONSIVE =================== */
+@media (max-width:1040px){
+  .nav,.hdr>.hdr-in>.btn{display:none}
+  .burger{display:flex}
+  .hero-in{grid-template-columns:1fr;gap:44px}
+  .eco{max-width:560px;margin-inline:auto}
+  .steps{grid-template-columns:repeat(4,1fr);border-top:none}
+  .step{border-top:1px solid rgba(255,255,255,.14);padding:30px 20px 24px 0}
+  .fw{grid-template-columns:repeat(3,1fr);border-left:none}
+  .fw div{border-left:1px solid var(--rule);border-right:none}
+  .chain{grid-template-columns:repeat(4,1fr);gap:14px 10px}
+}
+@media (max-width:860px){
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(2,1fr)}
+  .g2{grid-template-columns:1fr}
+  .prob,.contact{grid-template-columns:1fr}
+  .ftr-grid{grid-template-columns:1fr 1fr}
+  .ftr-grid>div:first-child{grid-column:1/-1}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .fw{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .g4,.g3,.g2{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .fw{grid-template-columns:1fr}
+  .fw div{border-right:1px solid var(--rule)}
+  .svc-list,.fields{grid-template-columns:1fr}
+  .chain{grid-template-columns:repeat(2,1fr)}
+  .port-row{grid-template-columns:repeat(3,1fr)}
+  .ftr-grid{grid-template-columns:1fr}
+  .btns .btn{width:100%}
+  .wa-float .txt{display:none}
+  .wa-float{padding:15px;right:14px}
+  .hero-meta{gap:8px 18px;font-size:.84rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;
+    transition-duration:.001ms!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="hdr">
+  <div class="hdr-in">
+    <a class="brand" href="#top">
+      <img src="assets/logo.png" alt="Sahaj Digital Studio logo" width="44" height="44">
+      <span class="brand-txt"><b>Sahaj Digital Studio</b><span class="brand-sub">Strategy · Creativity · Growth</span></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#top">Home</a>
+      <a href="#services">Services</a>
+      <a href="#approach">Our approach</a>
+      <a href="#why">Why us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary" href="#contact">Let's talk</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><span></span></button>
+  </div>
+  <div class="mnav" id="mnav">
+    <ul>
+      <li><a href="#top">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#approach">Our approach</a></li>
+      <li><a href="#why">Why us</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="btn btn-primary" href="#contact">Let's talk</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+<!-- ============ 02 HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <div>
+      <p class="eyebrow">Digital growth partner</p>
+      <h1>Build your digital presence. Grow your business.</h1>
+      <p class="lede">Strategy, creativity and digital execution to help businesses build, present, promote and grow.</p>
+      <p class="lede-2">From websites and creative advertising to digital marketing, content and growth strategy — we help turn your digital presence into a business asset.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="#contact">Let's talk about your business</a>
+        <a class="btn btn-ghost" href="#intro-video">See what we do</a>
+      </div>
+      <div class="hero-meta">
+        <span><i></i>Websites &amp; digital presence</span>
+        <span><i></i>Advertising &amp; content</span>
+        <span><i></i>Marketing &amp; growth strategy</span>
+      </div>
+    </div>
+
+    <div>
+      <svg class="eco" viewBox="0 0 440 396" role="img" aria-label="Diagram: business, positioning, website, content, advertising, audience and growth connected as one digital system">
+        <g class="rail">
+          <path d="M70 46 V78 M70 78 H370 M370 78 V110"/>
+          <path d="M70 110 V150 M370 110 V150"/>
+          <path d="M70 182 V214 M70 214 H370 M370 214 V182"/>
+          <path d="M220 214 V246"/>
+          <path d="M120 310 H320"/>
+          <path d="M220 278 V310 M120 310 V336 M320 310 V336"/>
+        </g>
+        <path class="flow" d="M70 46 V78 H370 V150 M70 110 V182 M70 214 H370 M220 214 V310 H320 V336"/>
+
+        <g class="node glow"><rect x="10" y="14" width="120" height="34"/><text x="70" y="36" text-anchor="middle">Business</text></g>
+        <g class="node"><rect x="310" y="76" width="120" height="34"/><text x="370" y="98" text-anchor="middle">Positioning</text></g>
+        <g class="node"><rect x="10" y="148" width="120" height="34"/><text x="70" y="170" text-anchor="middle">Website</text></g>
+        <g class="node"><rect x="310" y="148" width="120" height="34"/><text x="370" y="170" text-anchor="middle">Content</text></g>
+        <g class="node"><rect x="160" y="244" width="120" height="34"/><text x="220" y="266" text-anchor="middle">Advertising</text></g>
+        <g class="node"><rect x="60" y="334" width="120" height="34"/><text x="120" y="356" text-anchor="middle">Audience</text></g>
+        <g class="node glow"><rect x="260" y="334" width="120" height="34"/><text x="320" y="356" text-anchor="middle">Growth</text></g>
+
+        <g class="pip">
+          <rect x="398" y="10" width="9" height="9"/><rect x="414" y="24" width="6" height="6"/>
+          <rect x="412" y="4" width="5" height="5"/><rect x="386" y="26" width="5" height="5"/>
+          <rect x="16" y="380" width="8" height="8"/><rect x="32" y="388" width="5" height="5"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 POSITIONING STRIP ============ -->
+<div class="strip">
+  <div class="wrap">
+    <b>Digital growth</b><i></i><b>Marketing</b><i></i><b>Creative strategy</b>
+  </div>
+</div>
+
+<!-- ============ 04 BUSINESS INTRO VIDEO ============ -->
+<section class="sec mist" id="intro-video">
+  <div class="wrap">
+    <div class="vid-head rv">
+      <p class="eyebrow">Business introduction</p>
+      <h2>See what Sahaj Digital Studio can do for your business</h2>
+      <p class="lede">Our 60-second introduction gives you a quick look at the creative, digital and marketing capabilities we bring together for businesses and brands.</p>
+    </div>
+
+    <div class="player rv" id="player">
+      <img class="poster" loading="lazy" decoding="async" src="assets/poster.jpg" alt="Sahaj Digital Studio business introduction video" width="1280" height="720">
+      <video id="introVideo" preload="none" playsinline controls
+             poster="assets/poster.jpg"
+             aria-label="Sahaj Digital Studio business introduction video">
+        <source src="videos/my-business-intro.mp4" type="video/mp4">
+        Your browser does not support embedded video. You can
+        <a href="videos/my-business-intro.mp4">download the introduction video</a> instead.
+      </video>
+      <button class="play" id="playBtn" aria-label="Play the Sahaj Digital Studio introduction video">
+        <span class="play-ring" aria-hidden="true">
+          <svg width="26" height="30" viewBox="0 0 26 30" fill="#fff"><path d="M0 0l26 15L0 30z"/></svg>
+        </span>
+        <span class="play-label">Watch the 60-second introduction</span>
+      </button>
+    </div>
+    <p class="vid-note">Sound on for the full introduction. Plays only when you press play.</p>
+  </div>
+</section>
+
+<!-- ============ 05 QUICK SERVICE OVERVIEW ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Our capabilities</p>
+      <h2>From idea to digital growth</h2>
+      <p class="lede">Six capabilities we bring together around one business objective, rather than six services sold separately.</p>
+    </div>
+    <div class="grid g3">
+      <article class="card rv">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2.5" y="4" width="19" height="16" rx="2"/><path d="M2.5 9h19M6 6.5h.01M9 6.5h.01"/></svg>
+        <h3>Websites</h3><p>Build your digital foundation.</p>
+      </article>
+      <article class="card rv">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 000 18M12 3a14 14 0 010 18M3.5 9h17M3.5 15h17"/></svg>
+        <h3>Creative content</h3><p>Communicate your brand visually.</p>
+      </article>
+      <article class="card rv">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 10v4a1 1 0 001 1h3l6 4V5L7 9H4a1 1 0 00-1 1z"/><path d="M17.5 8.5a5 5 0 010 7"/></svg>
+        <h3>Advertising</h3><p>Put your message in front of the right audience.</p>
+      </article>
+      <article class="card rv">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 19h18M6 19V11M11 19V6M16 19v-5M21 19V9"/></svg>
+        <h3>Digital marketing</h3><p>Build visibility and audience connection.</p>
+      </article>
+      <article class="card rv">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M10 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg>
+        <h3>YouTube &amp; content</h3><p>Develop and package content for digital platforms.</p>
+      </article>
+      <article class="card rv">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 17l5.5-5.5 3.5 3.5L21 6"/><path d="M15.5 6H21v5.5"/></svg>
+        <h3>Business growth</h3><p>Connect digital activity with business objectives.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 PROBLEM ============ -->
+<section class="sec mist">
+  <div class="wrap prob">
+    <div class="rv">
+      <p class="eyebrow">The real problem</p>
+      <h2>Your business may be good. Is your digital presence showing it?</h2>
+      <p class="lede">Most businesses don't have a digital problem because they do too little. They have one because the pieces were never connected to a single objective.</p>
+      <div class="prob-answer">
+        <p>Sahaj Digital Studio brings strategy, creativity and digital execution together to address the real problem — not simply to add more digital activity.</p>
+      </div>
+    </div>
+    <ul class="rv">
+      <li>Unclear online positioning</li>
+      <li>Weak website presence</li>
+      <li>Inconsistent communication</li>
+      <li>Disconnected social media activity</li>
+      <li>Content without a clear purpose</li>
+      <li>Advertising without a clear objective</li>
+      <li>Difficulty reaching the right audience</li>
+      <li>No integrated digital strategy</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 07 APPROACH ============ -->
+<section class="sec dark" id="approach">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Our approach</p>
+      <h2>How we help you grow</h2>
+      <p class="lede">A working sequence, not a sales pitch. Each stage informs the next, and the last one loops back to the first.</p>
+    </div>
+    <div class="steps">
+      <div class="step on rv"><div class="n">01</div><h3>Understand</h3><p>Understand the business, audience and objectives.</p></div>
+      <div class="step rv"><div class="n">02</div><h3>Identify</h3><p>Identify the real digital or marketing challenge.</p></div>
+      <div class="step rv"><div class="n">03</div><h3>Position</h3><p>Determine how the business should present itself.</p></div>
+      <div class="step rv"><div class="n">04</div><h3>Build</h3><p>Create the digital assets required.</p></div>
+      <div class="step rv"><div class="n">05</div><h3>Promote</h3><p>Use suitable content, marketing and advertising channels.</p></div>
+      <div class="step rv"><div class="n">06</div><h3>Measure</h3><p>Track meaningful outcomes.</p></div>
+      <div class="step on rv"><div class="n">07</div><h3>Improve</h3><p>Continuously refine the strategy.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 SERVICES ============ -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">What we do</p>
+      <h2>Integrated digital solutions designed around your business goals</h2>
+      <p class="lede">Grouped by what they achieve for you, so you can see which parts of your digital presence need attention.</p>
+    </div>
+
+    <div class="grid g2">
+      <article class="svc rv">
+        <div class="svc-top">
+          <h3>Digital presence</h3>
+          <p>Build a digital foundation that clearly communicates your business and gives your audience a place to connect with you.</p>
+        </div>
+        <ul class="svc-list">
+          <li>Business websites</li><li>Portfolio websites</li>
+          <li>Landing pages</li><li>Educational websites</li>
+          <li>Brand websites</li><li>Website strategy</li>
+          <li>Website content guidance</li><li>Website improvement</li>
+        </ul>
+        <div class="svc-foot"><a class="btn btn-ghost" href="#contact">Build your digital presence</a></div>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc-top">
+          <h3>Advertising &amp; creative promotion</h3>
+          <p>Create engaging promotional content designed around the product, audience and advertising objective.</p>
+        </div>
+        <ul class="svc-list">
+          <li>AI-assisted commercial advertisements</li><li>Product advertisements</li>
+          <li>Brand advertisements</li><li>Short promotional videos</li>
+          <li>Cinematic advertisements</li><li>Digital promotional creatives</li>
+        </ul>
+        <div class="svc-foot"><a class="btn btn-ghost" href="#contact">Create your campaign</a></div>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc-top">
+          <h3>Social media advertising</h3>
+          <p>Turn creative ideas into targeted digital campaigns with a clear purpose.</p>
+        </div>
+        <ul class="svc-list">
+          <li>Instagram advertisements</li><li>Facebook advertisements</li>
+          <li>Social media promotional campaigns</li><li>Short-form video advertising</li>
+          <li>Brand awareness campaigns</li>
+        </ul>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc-top">
+          <h3>UGC-style advertising</h3>
+          <p>Creator-style promotional content that tells the product's story in a natural, conversational format.</p>
+        </div>
+        <ul class="svc-list">
+          <li>UGC-style ad concepts</li><li>Creator-style promotional content</li>
+          <li>Product storytelling</li><li>Authentic-looking promotional communication</li>
+        </ul>
+        <div class="svc-foot"><p style="font-size:.85rem;color:var(--slate-light);margin:0">This is produced content in a creator format. We label it as advertising and never present it as a genuine customer review.</p></div>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc-top">
+          <h3>Digital marketing</h3>
+          <p>Develop a connected digital marketing strategy rather than posting or advertising without direction.</p>
+        </div>
+        <ul class="svc-list">
+          <li>Digital marketing strategy</li><li>Organic growth strategy</li>
+          <li>Paid advertising strategy</li><li>Social media marketing</li>
+          <li>Content marketing</li><li>Audience development</li>
+          <li>Campaign planning</li><li>Brand awareness strategy</li>
+        </ul>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc-top">
+          <h3>Creative design</h3>
+          <p>Translate ideas and business messages into clear, professional visual communication.</p>
+        </div>
+        <ul class="svc-list">
+          <li>Digital flyers</li><li>Posters</li>
+          <li>Promotional creatives</li><li>Campaign creatives</li>
+          <li>Signage concepts</li><li>Advertising designs</li>
+          <li>Social media creatives</li>
+        </ul>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc-top">
+          <h3>YouTube</h3>
+          <p>Channel strategy, packaging and content planning built around a defined audience.</p>
+        </div>
+        <ul class="svc-list">
+          <li>YouTube channel strategy</li><li>YouTube growth guidance</li>
+          <li>YouTube marketing</li><li>YouTube SEO</li>
+          <li>Video packaging strategy</li><li>Title strategy</li>
+          <li>Thumbnail strategy</li><li>Audience development</li>
+          <li>Channel positioning</li><li>Content planning</li>
+          <li>Monetization guidance</li>
+        </ul>
+        <div class="svc-foot"><p style="font-size:.85rem;color:var(--slate-light);margin:0">We work on strategy and execution. We do not promise views, subscribers or monetization outcomes.</p></div>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc-top">
+          <h3>Business growth support</h3>
+          <p>Help businesses connect their digital presence with real business objectives.</p>
+        </div>
+        <ul class="svc-list">
+          <li>Online visibility</li><li>Brand positioning</li>
+          <li>Customer awareness</li><li>Digital presence</li>
+          <li>Marketing strategy</li><li>Lead-generation strategy</li>
+          <li>Content strategy</li><li>Customer communication</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 09 INTEGRATED ============ -->
+<section class="sec dark">
+  <div class="wrap">
+    <div class="sec-head rv" style="max-width:62ch">
+      <p class="eyebrow">Connected strategy</p>
+      <h2>More than individual services. A connected digital strategy.</h2>
+      <p class="lede">A business rarely needs just one thing. It needs the pieces to agree with each other.</p>
+      <div class="stack">
+        <b>Website</b><i>+</i><b>Brand positioning</b><i>+</i><b>Content</b><i>+</i><b>Advertising</b><i>+</i><b>Marketing strategy</b>
+      </div>
+    </div>
+    <ul class="chain rv" aria-label="How the pieces connect: business, positioning, website, content, advertising, audience, leads, growth">
+      <li>Business</li><li>Positioning</li><li>Website</li><li>Content</li>
+      <li>Advertising</li><li>Audience</li><li>Leads</li><li>Growth</li>
+    </ul>
+    <p class="lede rv" style="margin-top:34px">Instead of selling each service separately, we look at how these components can work together. What that looks like in practice depends on your business, your market and your starting point.</p>
+  </div>
+</section>
+
+<!-- ============ 10 WHO WE HELP ============ -->
+<section class="sec mist">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Who we work with</p>
+      <h2>Built for businesses and brands at different stages</h2>
+    </div>
+    <div class="grid g4">
+      <article class="card rv"><h3>Businesses</h3><p>Strengthen your digital presence.</p></article>
+      <article class="card rv"><h3>Startups</h3><p>Build the foundation for digital growth.</p></article>
+      <article class="card rv"><h3>Local businesses</h3><p>Improve visibility and customer communication.</p></article>
+      <article class="card rv"><h3>Entrepreneurs</h3><p>Turn ideas into professional digital assets.</p></article>
+      <article class="card rv"><h3>Creators</h3><p>Build content and audience strategies.</p></article>
+      <article class="card rv"><h3>Educational platforms</h3><p>Create better digital learning and communication experiences.</p></article>
+      <article class="card rv"><h3>Product brands</h3><p>Develop promotional content and campaigns.</p></article>
+      <article class="card rv"><h3>Service providers</h3><p>Present your expertise professionally online.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11 WHY US ============ -->
+<section class="sec" id="why">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">Why work with us</p>
+      <h2>Six principles we actually work by</h2>
+    </div>
+    <div class="grid g3">
+      <article class="card rv"><h3>Strategy first</h3><p>We begin by understanding the business and its real challenge.</p></article>
+      <article class="card rv"><h3>Integrated thinking</h3><p>We connect websites, content, marketing, advertising and growth.</p></article>
+      <article class="card rv"><h3>Creative execution</h3><p>Strategy is translated into strong digital communication.</p></article>
+      <article class="card rv"><h3>Business focus</h3><p>Digital activity should support meaningful business objectives.</p></article>
+      <article class="card rv"><h3>Long-term thinking</h3><p>We aim to create sustainable digital systems rather than one-off activity.</p></article>
+      <article class="card rv"><h3>Honest marketing</h3><p>No fake followers, fake reviews, fake results or unrealistic guarantees.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12 CORE FRAMEWORK ============ -->
+<section class="sec mist">
+  <div class="wrap">
+    <div class="sec-head rv" style="max-width:60ch">
+      <p class="eyebrow">Our framework</p>
+      <h2>Build. Present. Promote. Grow. Improve.</h2>
+      <p class="lede">Every engagement moves through these five stages — and then starts again with better information.</p>
+    </div>
+    <div class="fw rv">
+      <div><h3>Build</h3><p>Create the foundation.</p></div>
+      <div><h3>Present</h3><p>Communicate your value.</p></div>
+      <div><h3>Promote</h3><p>Reach your audience.</p></div>
+      <div><h3>Grow</h3><p>Build visibility and opportunity.</p></div>
+      <div><h3>Improve</h3><p>Learn, measure and refine.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13 PORTFOLIO ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv"><p class="eyebrow">Selected work</p><h2>Our portfolio is growing</h2></div>
+    <div class="port rv">
+      <div class="port-row" aria-hidden="true"><div><span></span></div><div><span></span></div><div><span></span></div></div>
+      <h3>Selected projects coming soon</h3>
+      <p>We're preparing a set of projects that show the work end to end — the objective, the strategy and what we built. Until those are ready, we'd rather show you nothing than show you someone else's.</p>
+      <a class="btn btn-ghost" href="#contact">Ask us about relevant work</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 14 FINAL CTA ============ -->
+<section class="sec cta-band">
+  <div class="wrap">
+    <h2 class="rv">Ready to build your digital presence?</h2>
+    <p class="lede rv">Tell us about your business, your goals and the challenge you're trying to solve. Let's explore the right digital strategy for you.</p>
+    <div class="btns rv">
+      <a class="btn btn-primary" href="#contact">Start a conversation</a>
+      <a class="btn btn-wa" href="https://wa.me/917972225403?text=Hello%20Sahaj%20Digital%20Studio%2C%20I%20would%20like%20to%20discuss%20my%20business%20requirements." target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5s-.7-1.6-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.7.7.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm0 18.1a8.1 8.1 0 01-4.1-1.1l-.3-.2-3 .8.8-3-.2-.3A8.1 8.1 0 1112 20.1z"/></svg>
+        WhatsApp us
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 15 CONTACT ============ -->
+<section class="sec mist" id="contact">
+  <div class="wrap contact">
+    <div class="rv">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's talk about your business</h2>
+      <p class="lede">Call, message or send the form. Tell us where you are now and what you're trying to reach — we'll tell you honestly whether we're the right fit.</p>
+      <div class="ways">
+        <a class="way" href="tel:7972225403">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M21 16.9v2.5a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 011.1 3.7 2 2 0 013.1 1.5h2.5a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L6.7 9.3a16 16 0 006 6l1.2-1.1a2 2 0 012.1-.5c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></svg>
+          <span><small>Call</small><b>79722 25403</b></span>
+        </a>
+        <a class="way" href="https://wa.me/917972225403?text=Hello%20Sahaj%20Digital%20Studio%2C%20I%20would%20like%20to%20discuss%20my%20business%20requirements." target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm0 18.1a8.1 8.1 0 01-4.1-1.1l-.3-.2-3 .8.8-3-.2-.3A8.1 8.1 0 1112 20.1zm4.6-5.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.8-3.4-.3-.5.3-.5.8-1.4.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.4-.5-.6-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7.6-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.2-.2-.5-.3z"/></svg>
+          <span><small>WhatsApp</small><b>79722 25403</b></span>
+        </a>
+        <a class="way" href="mailto:sahajdigitalstudio7@gmail.com">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="M3 6l9 6.5L21 6"/></svg>
+          <span><small>Email</small><b>sahajdigitalstudio7@gmail.com</b></span>
+        </a>
+        <a class="way" href="https://www.sahajdigitalstudio.com/">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.5 9h17M3.5 15h17M12 3a14 14 0 000 18M12 3a14 14 0 010 18"/></svg>
+          <span><small>Website</small><b>www.sahajdigitalstudio.com</b></span>
+        </a>
+      </div>
+    </div>
+
+    <form id="enquiry" class="rv" novalidate>
+      <div class="fields">
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-biz">Business name <span class="opt">(optional)</span></label>
+          <input id="f-biz" name="business" type="text" autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone or WhatsApp</label>
+          <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+        </div>
+        <div class="field full">
+          <label for="f-need">What do you need help with?</label>
+          <select id="f-need" name="need" required>
+            <option value="">Choose one</option>
+            <option>Website</option>
+            <option>Digital marketing</option>
+            <option>Advertising</option>
+            <option>Creative design</option>
+            <option>YouTube</option>
+            <option>Content</option>
+            <option>Business growth</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="f-msg">Tell us briefly about your business</label>
+          <textarea id="f-msg" name="message" rows="4" placeholder="What you do, who you serve, and what you'd like to improve."></textarea>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">Send enquiry</button>
+      <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+      <p class="form-note">Prefer to talk? <a href="tel:7972225403" style="color:var(--orange-ink);font-weight:600">Call 79722 25403</a></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ============ 16 FOOTER ============ -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <img class="mark" src="assets/logo.png" alt="Sahaj Digital Studio logo" width="56" height="56" loading="lazy">
+        <p>A digital growth, marketing and creative strategy company. We help businesses build, present, promote and grow their digital presence.</p>
+        <div class="ftr-tag">Build<i></i>Present<i></i>Promote<i></i>Grow<i></i>Improve</div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#intro-video">Introduction video</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#approach">Our approach</a></li>
+          <li><a href="#why">Why us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:7972225403">79722 25403</a></li>
+          <li><a href="https://wa.me/917972225403" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="mailto:sahajdigitalstudio7@gmail.com">sahajdigitalstudio7@gmail.com</a></li>
+          <li><a href="https://www.sahajdigitalstudio.com/">www.sahajdigitalstudio.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ftr-btm">
+      <span>&copy; <span id="yr">2026</span> Sahaj Digital Studio. All rights reserved.</span>
+      <span>Digital growth · Marketing · Creative strategy</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOATING BUTTON ============ -->
+<a class="wa-float" href="https://wa.me/917972225403?text=Hello%20Sahaj%20Digital%20Studio%2C%20I%20would%20like%20to%20discuss%20my%20business%20requirements."
+   target="_blank" rel="noopener" aria-label="Chat with Sahaj Digital Studio on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm0 18.1a8.1 8.1 0 01-4.1-1.1l-.3-.2-3 .8.8-3-.2-.3A8.1 8.1 0 1112 20.1zm4.6-5.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-1.6-.8-2.7-1.5-3.8-3.4-.3-.5.3-.5.8-1.4.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.4-.5-.6-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7.6-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.2-.2-.5-.3z"/></svg>
+  <span class="txt">WhatsApp</span>
+</a>
+
+<script>
+(function(){
+  "use strict";
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* ---- mobile nav ---- */
+  var burger = document.getElementById('burger'), mnav = document.getElementById('mnav');
+  burger.addEventListener('click', function(){
+    var open = burger.getAttribute('aria-expanded') === 'true';
+    burger.setAttribute('aria-expanded', String(!open));
+    burger.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+    mnav.classList.toggle('open', !open);
+  });
+  mnav.addEventListener('click', function(e){
+    if (e.target.tagName === 'A'){
+      mnav.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+      burger.setAttribute('aria-label','Open menu');
+    }
+  });
+
+  /* ---- video: lazy, user-initiated, never autoplays with sound ---- */
+  var player = document.getElementById('player'),
+      video  = document.getElementById('introVideo'),
+      playBtn= document.getElementById('playBtn');
+  function start(){
+    player.classList.add('playing');
+    video.setAttribute('preload','auto');
+    var p = video.play();
+    if (p && p.catch) p.catch(function(){ video.controls = true; });
+    video.focus({preventScroll:true});
+  }
+  playBtn.addEventListener('click', start);
+  video.addEventListener('play', function(){ player.classList.add('playing'); });
+
+  /* ---- enquiry form ----
+     No backend is wired yet. Until FORM_ENDPOINT is set, the form hands the
+     enquiry to the user's email client so no message is silently lost.      */
+  var FORM_ENDPOINT = ""; // <-- set to your Formspree/Web3Forms/API URL
+  var form = document.getElementById('enquiry'), msg = document.getElementById('formMsg');
+  function say(text, kind){ msg.textContent = text; msg.className = 'form-msg show ' + kind; }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (!form.checkValidity()){
+      say('Please fill in your name, email, phone and what you need help with.','err');
+      var bad = form.querySelector(':invalid'); if (bad) bad.focus();
+      return;
+    }
+    var d = new FormData(form), o = {};
+    d.forEach(function(v,k){ o[k] = v; });
+
+    if (FORM_ENDPOINT){
+      say('Sending your enquiry…','ok');
+      fetch(FORM_ENDPOINT,{
+        method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body: JSON.stringify(o)
+      }).then(function(r){
+        if (!r.ok) throw new Error('bad status');
+        form.reset();
+        say('Enquiry sent. We\u2019ll get back to you shortly.','ok');
+      }).catch(function(){
+        say('That didn\u2019t send. Please WhatsApp or call 79722 25403 instead.','err');
+      });
+      return;
+    }
+
+    var body = 'Name: ' + (o.name||'') +
+      '\nBusiness: ' + (o.business||'\u2014') +
+      '\nEmail: ' + (o.email||'') +
+      '\nPhone/WhatsApp: ' + (o.phone||'') +
+      '\nNeeds help with: ' + (o.need||'') +
+      '\n\nAbout the business:\n' + (o.message||'\u2014');
+    window.location.href = 'mailto:sahajdigitalstudio7@gmail.com?subject=' +
+      encodeURIComponent('Website enquiry \u2014 ' + (o.business || o.name || 'New enquiry')) +
+      '&body=' + encodeURIComponent(body);
+    say('Opening your email app with the enquiry ready to send.','ok');
+  });
+
+  /* ---- one scroll reveal, disabled under reduced motion ---- */
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items = document.querySelectorAll('.rv');
+  if (reduce || !('IntersectionObserver' in window)){
+    items.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){
+          var sibs = Array.prototype.slice.call(en.target.parentNode.children).indexOf(en.target);
+          en.target.style.transitionDelay = Math.min(sibs,5) * 55 + 'ms';
+          en.target.classList.add('in');
+          io.unobserve(en.target);
+        }
+      });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.06});
+    items.forEach(function(el){ io.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>
